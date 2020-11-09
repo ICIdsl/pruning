@@ -18,7 +18,13 @@ For an updated **pruners** folder that has ImageNet pruning as well as a wider v
 The updated pruners also works as a standalone library that can be used in your own projects.
 The adapt.yml file has the conda environment that would satisfy all the required dependencies for this project. 
 
-To run this project, clone https://github.com/adityarajagopal/pytorch_training.git and run **git submodule update --init src/ar4414/pruning**. 
+Installation
+------------
+```
+git clone https://github.com/ICIdsl/pytorch_training.git 
+cd pytorch_training
+git submodule update --init src/ar4414/pruning
+```
 
 ## Pruning Configurations 
 As you go down the config file, within the pruning_hyperpamaters section, each true before will cancel out the following true or falses, i.e. priority is top down.
